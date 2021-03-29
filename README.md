@@ -1,6 +1,4 @@
-# @softdev1029/platform
-
-Frontend React Code sample for softdev1029
+# Frontend React Code sample for softdev1029
 
 ## Getting Started
 
