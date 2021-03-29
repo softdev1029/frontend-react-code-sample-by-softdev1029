@@ -1,0 +1,53 @@
+{
+  "name": "@softdev1029/babel-config",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Babel configuration files for the softdev1029 Platform.",
+  "homepage": "https://github.com/softdev1029/softdev1029#readme",
+  "bugs": "https://github.com/softdev1029/softdev1029/issues",
+  "license": "UNLICENSED",
+  "author": "Tim Stasse <tim@softdev1029.com.au>",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/softdev1029/softdev1029.git",
+    "directory": "packages/configurations/babel"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "yarn build:babel-config",
+    "build:babel-config": "tsc",
+    "clean": "yarn clean:babel-config",
+    "clean:babel-config": "rm -rf lib; rm tsconfig.tsbuildinfo"
+  },
+  "dependencies": {
+    "lodash": "^4.17.20"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.12.13",
+    "@babel/plugin-proposal-decorators": "^7.12.13",
+    "@emotion/babel-plugin": "^11.2.0",
+    "@softdev1029/babel-plugin-proposal-decorators-types": "workspace:^0.1.0",
+    "@softdev1029/babel-plugin-transform-imports-types": "workspace:^0.1.0",
+    "@softdev1029/babel-preset-react-types": "workspace:^0.1.0",
+    "@softdev1029/babel-preset-typescript-types": "workspace:^0.1.0",
+    "@softdev1029/emotion-babel-plugin-types": "workspace:^0.1.0",
+    "@softdev1029/ts-config": "workspace:^0.1.0",
+    "@softdev1029/type-utils": "workspace:^0.1.0",
+    "@types/babel__core": "^7.1.12",
+    "@types/babel__preset-env": "^7.9.1",
+    "@types/lodash": "^4.14.166",
+    "@types/node": "^14.14.25",
+    "babel-plugin-transform-imports": "^2.0.0",
+    "typescript": "^4.2.0-beta"
+  },
+  "peerDependencies": {
+    "@babel/core": "*",
+    "@babel/preset-env": "*",
+    "@babel/preset-react": "*",
+    "@babel/preset-typescript": "*"
+  },
+  "yarn.build": {
+    "input": "src",
+    "output": "lib"
+  }
+}

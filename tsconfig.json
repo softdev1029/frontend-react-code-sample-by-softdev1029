@@ -1,0 +1,10 @@
+{
+  "extends": "@softdev1029/ts-config/tsconfig.json",
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true
+  },
+  "files": [],
+  "include": ["*.js", "**/*.babel.ts"],
+  "exclude": [".pnp.cjs", "**/bundles", "**/lib"]
+}

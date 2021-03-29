@@ -1,0 +1,45 @@
+{
+  "name": "@softdev1029/ts-declaration-webpack-plugin",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Webpack plugin to generate TypeScript declaration files for the softdev1029 Platform.",
+  "homepage": "https://github.com/softdev1029/softdev1029#readme",
+  "bugs": "https://github.com/softdev1029/softdev1029/issues",
+  "license": "UNLICENSED",
+  "author": "Tim Stasse <tim@softdev1029.com.au>",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/softdev1029/softdev1029.git",
+    "directory": "packages/plugins/webpack/ts-declaration"
+  },
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "yarn build:ts-declaration-webpack-plugin",
+    "build:ts-declaration-webpack-plugin": "tsc",
+    "clean": "yarn clean:ts-declaration-webpack-plugin",
+    "clean:ts-declaration-webpack-plugin": "rm -rf lib; rm tsconfig.tsbuildinfo"
+  },
+  "dependencies": {
+    "dts-bundle-generator": "patch:dts-bundle-generator@5.6.0#../../../patches/dts-bundle-generator/5.6.0/.patch",
+    "loader-utils": "^2.0.0",
+    "lodash": "^4.17.20",
+    "webpack": "^5.21.1"
+  },
+  "devDependencies": {
+    "@softdev1029/ts-config": "workspace:^0.1.0",
+    "@softdev1029/type-utils": "workspace:^0.1.0",
+    "@types/loader-utils": "^2.0.1",
+    "@types/lodash": "^4.14.166",
+    "@types/node": "^14.14.16",
+    "@yarnpkg/fslib": "softdev1029/berry#workspace=@yarnpkg/fslib",
+    "@yarnpkg/libzip": "softdev1029/berry#workspace=@yarnpkg/libzip",
+    "typescript": "^4.2.0-beta"
+  },
+  "peerDependencies": {
+    "webpack": "*"
+  },
+  "yarn.build": {
+    "input": "src",
+    "output": "lib"
+  }
+}

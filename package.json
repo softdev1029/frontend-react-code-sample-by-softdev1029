@@ -1,0 +1,99 @@
+{
+  "name": "@softdev1029/platform",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Monorepo for the softdev1029 Platform.",
+  "homepage": "https://github.com/softdev1029/softdev1029#readme",
+  "bugs": "https://github.com/softdev1029/softdev1029/issues",
+  "license": "UNLICENSED",
+  "author": "Tim Stasse <tim@softdev1029.com.au>",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/softdev1029/softdev1029.git"
+  },
+  "scripts": {
+    "check:audit": "yarn npm audit --all --recursive --environment production",
+    "check:commit": "yarn commitlint -e",
+    "check:constraints": "yarn constraints",
+    "check:staged": "yarn lint-staged",
+    "check:version": "yarn version check",
+    "commit": "yarn git-cz",
+    "commit:retry": "yarn git-cz --retry",
+    "import:plugin": "yarn plugin import from sources --path $BERRY_REPO_PATH",
+    "lint:project": "yarn eslint . --ext .js,.jsx,.ts,.tsx",
+    "postinstall": "yarn pnpify --sdk",
+    "set:version": "yarn set version from sources --path $BERRY_REPO_PATH"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
+    "@babel/preset-react": "^7.12.13",
+    "@babel/preset-typescript": "^7.12.13",
+    "@commitlint/cli": "softdev1029/commitlint#workspace=@commitlint/cli&branch=refactor/prompt2&commit=162c155e50148b6abb6e3393596eb66f462fa576",
+    "@commitlint/config-conventional": "softdev1029/commitlint#workspace=@commitlint/config-conventional&branch=refactor/prompt2&commit=162c155e50148b6abb6e3393596eb66f462fa576",
+    "@commitlint/prompt": "softdev1029/commitlint#workspace=@commitlint/prompt&branch=refactor/prompt2&commit=162c155e50148b6abb6e3393596eb66f462fa576",
+    "@softdev1029/babel-config": "workspace:^0.1.0",
+    "@softdev1029/commitlint-config": "workspace:^0.1.0",
+    "@softdev1029/eslint-config": "workspace:^0.1.0",
+    "@softdev1029/lint-staged-config": "workspace:^0.1.0",
+    "@softdev1029/prettier-config": "workspace:^0.1.0",
+    "@softdev1029/ts-config": "workspace:^0.1.0",
+    "@types/babel__core": "^7.1.12",
+    "@types/babel__preset-env": "^7.9.1",
+    "@types/eslint": "^7.2.6",
+    "@types/node": "^14.14.22",
+    "@types/prettier": "^2.1.6",
+    "@yarnpkg/pnpify": "softdev1029/berry#workspace=@yarnpkg/pnpify",
+    "commitizen": "^4.2.2",
+    "eslint": "patch:eslint@7.8.1#packages/patches/eslint/7.8.1/.patch",
+    "eslint-import-resolver-node": "^0.3.4",
+    "husky": "^4.3.6",
+    "lint-staged": "^10.5.3",
+    "prettier": "^2.2.1",
+    "typescript": "^4.2.0-beta"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependenciesMeta": {
+    "core-js": {
+      "built": false
+    },
+    "husky": {
+      "built": true
+    }
+  },
+  "resolutions": {
+    "@yarnpkg/cli": "softdev1029/berry#workspace=@yarnpkg/cli",
+    "@yarnpkg/core": "softdev1029/berry#workspace=@yarnpkg/core",
+    "@yarnpkg/esbuild-plugin-pnp": "softdev1029/berry#workspace=@yarnpkg/esbuild-plugin-pnp",
+    "@yarnpkg/fslib": "softdev1029/berry#workspace=@yarnpkg/fslib",
+    "@yarnpkg/json-proxy": "softdev1029/berry#workspace=@yarnpkg/json-proxy",
+    "@yarnpkg/libzip": "softdev1029/berry#workspace=@yarnpkg/libzip",
+    "@yarnpkg/parsers": "softdev1029/berry#workspace=@yarnpkg/parsers",
+    "@yarnpkg/plugin-compat": "softdev1029/berry#workspace=@yarnpkg/plugin-compat",
+    "@yarnpkg/plugin-dlx": "softdev1029/berry#workspace=@yarnpkg/plugin-dlx",
+    "@yarnpkg/plugin-essentials": "softdev1029/berry#workspace=@yarnpkg/plugin-essentials",
+    "@yarnpkg/plugin-file": "softdev1029/berry#workspace=@yarnpkg/plugin-file",
+    "@yarnpkg/plugin-git": "softdev1029/berry#workspace=@yarnpkg/plugin-git",
+    "@yarnpkg/plugin-github": "softdev1029/berry#workspace=@yarnpkg/plugin-github",
+    "@yarnpkg/plugin-http": "softdev1029/berry#workspace=@yarnpkg/plugin-http",
+    "@yarnpkg/plugin-init": "softdev1029/berry#workspace=@yarnpkg/plugin-init",
+    "@yarnpkg/plugin-link": "softdev1029/berry#workspace=@yarnpkg/plugin-link",
+    "@yarnpkg/plugin-node-modules": "softdev1029/berry#workspace=@yarnpkg/plugin-node-modules",
+    "@yarnpkg/plugin-npm": "softdev1029/berry#workspace=@yarnpkg/plugin-npm",
+    "@yarnpkg/plugin-npm-cli": "softdev1029/berry#workspace=@yarnpkg/plugin-npm-cli",
+    "@yarnpkg/plugin-pack": "softdev1029/berry#workspace=@yarnpkg/plugin-pack",
+    "@yarnpkg/plugin-patch": "softdev1029/berry#workspace=@yarnpkg/plugin-patch",
+    "@yarnpkg/plugin-pnp": "softdev1029/berry#workspace=@yarnpkg/plugin-pnp",
+    "@yarnpkg/plugin-stage": "softdev1029/berry#workspace=@yarnpkg/plugin-stage",
+    "@yarnpkg/pnp": "softdev1029/berry#workspace=@yarnpkg/pnp",
+    "@yarnpkg/pnpify": "softdev1029/berry#workspace=@yarnpkg/pnpify",
+    "@yarnpkg/shell": "softdev1029/berry#workspace=@yarnpkg/shell"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/prompt"
+    }
+  }
+}

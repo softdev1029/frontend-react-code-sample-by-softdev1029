@@ -1,0 +1,51 @@
+{
+  "name": "@softdev1029/eslint-config",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Eslint configuration files for the softdev1029 Platform.",
+  "homepage": "https://github.com/softdev1029/softdev1029#readme",
+  "bugs": "https://github.com/softdev1029/softdev1029/issues",
+  "license": "UNLICENSED",
+  "author": "Tim Stasse <tim@softdev1029.com.au>",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/softdev1029/softdev1029.git",
+    "directory": "packages/configurations/eslint"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "yarn build:eslint-config",
+    "build:eslint-config": "tsc",
+    "clean": "yarn clean:eslint-config",
+    "clean:eslint-config": "rm -rf lib; rm -rf node_modules; rm tsconfig.tsbuildinfo"
+  },
+  "devDependencies": {
+    "@softdev1029/ts-config": "workspace:^0.1.0",
+    "@types/eslint": "^7.2.6",
+    "@typescript-eslint/eslint-plugin": "^4.11.0",
+    "@typescript-eslint/parser": "^4.11.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-config-standard-jsx": "^10.0.0",
+    "eslint-config-standard-with-typescript": "^19.0.1",
+    "eslint-import-resolver-node": "^0.3.4",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-sonarjs": "^0.5.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "eslint-plugin-tree-shaking": "^1.8.0",
+    "typescript": "^4.2.0-beta"
+  },
+  "peerDependencies": {
+    "eslint": "*",
+    "typescript": "*"
+  },
+  "yarn.build": {
+    "input": "src",
+    "output": "lib"
+  }
+}

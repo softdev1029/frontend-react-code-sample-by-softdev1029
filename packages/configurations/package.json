@@ -1,0 +1,23 @@
+{
+  "name": "@softdev1029/configs",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Tooling configuration files for the softdev1029 Platform.",
+  "homepage": "https://github.com/softdev1029/softdev1029#readme",
+  "bugs": "https://github.com/softdev1029/softdev1029/issues",
+  "license": "UNLICENSED",
+  "author": "Tim Stasse <tim@softdev1029.com.au>",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/softdev1029/softdev1029.git",
+    "directory": "packages/configurations"
+  },
+  "scripts": {
+    "build:configs": "yarn build:babel-config && yarn build:eslint-config && yarn build:prettier-config && yarn build:lint-staged-config && yarn build:commitlint-config",
+    "clean:configs": "yarn clean:babel-config && yarn clean:eslint-config && yarn clean:prettier-config && yarn clean:lint-staged-config && yarn clean:commitlint-config",
+    "postinstall": "yarn build:configs"
+  },
+  "workspaces": [
+    "*"
+  ]
+}

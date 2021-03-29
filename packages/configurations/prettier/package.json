@@ -1,0 +1,45 @@
+{
+  "name": "@softdev1029/prettier-config",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Prettier configuration files for the softdev1029 Platform.",
+  "homepage": "https://github.com/softdev1029/softdev1029#readme",
+  "bugs": "https://github.com/softdev1029/softdev1029/issues",
+  "license": "UNLICENSED",
+  "author": "Tim Stasse <tim@softdev1029.com.au>",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/softdev1029/softdev1029.git",
+    "directory": "packages/configurations/prettier"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "yarn build:prettier-config",
+    "build:prettier-config": "webpack --mode=production",
+    "clean": "yarn clean:prettier-config",
+    "clean:prettier-config": "rm -rf lib; rm -rf node_modules;"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.13",
+    "@babel/register": "^7.12.13",
+    "@softdev1029/ts-config": "workspace:^0.1.0",
+    "@softdev1029/webpack-config": "workspace:^0.1.0",
+    "@types/babel__core": "^7.1.12",
+    "@types/eslint": "^7.2.6",
+    "@types/node": "^14.14.16",
+    "@types/prettier": "^2.1.6",
+    "babel-loader": "^8.2.2",
+    "cache-loader": "^4.1.0",
+    "eslint": "patch:eslint@7.8.1#../../patches/eslint/7.8.1/.patch",
+    "typescript": "^4.2.0-beta",
+    "webpack": "^5.21.1",
+    "webpack-cli": "4.5.0"
+  },
+  "peerDependencies": {
+    "prettier": "*"
+  },
+  "yarn.build": {
+    "input": "src",
+    "output": "lib"
+  }
+}

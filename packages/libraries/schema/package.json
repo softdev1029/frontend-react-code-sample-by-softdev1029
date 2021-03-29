@@ -1,0 +1,28 @@
+{
+  "name": "@softdev1029/schema-lib",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Schema library for the softdev1029 Platform.",
+  "homepage": "https://github.com/softdev1029/softdev1029#readme",
+  "bugs": "https://github.com/softdev1029/softdev1029/issues",
+  "license": "UNLICENSED",
+  "author": "Tim Stasse <tim@softdev1029.com.au>",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/softdev1029/softdev1029.git",
+    "directory": "packages/libraries/schema"
+  },
+  "typings": "./index.d.ts",
+  "scripts": {
+    "build": "yarn build:schema-lib",
+    "build:schema-lib": "json2ts -i src/ -o ./ --bannerComment=\"/* eslint-disable eslint-comments/disable-enable-pair */\n/* eslint-disable @typescript-eslint/consistent-type-definitions */\""
+  },
+  "devDependencies": {
+    "@softdev1029/ts-config": "workspace:^0.1.0",
+    "json-schema-to-typescript": "^10.0.2",
+    "typescript": "^4.2.0-beta"
+  },
+  "yarn.build": {
+    "input": "src"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@softdev1029/type-utils",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Utility types for the softdev1029 Platform.",
+  "homepage": "https://github.com/softdev1029/softdev1029#readme",
+  "bugs": "https://github.com/softdev1029/softdev1029/issues",
+  "license": "UNLICENSED",
+  "author": "Tim Stasse <tim@softdev1029.com.au>",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/softdev1029/softdev1029.git",
+    "directory": "packages/utilities/type"
+  },
+  "main": "src/index.ts",
+  "devDependencies": {
+    "@softdev1029/ts-config": "workspace:^0.1.0",
+    "ts-toolbelt": "^8.4.0",
+    "typescript": "^4.2.0-beta"
+  }
+}

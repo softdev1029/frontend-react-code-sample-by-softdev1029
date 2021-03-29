@@ -1,0 +1,47 @@
+{
+  "name": "@softdev1029/yarn-plugin-environment",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Yarn plugin to manage environment variables for the softdev1029 Platform.",
+  "homepage": "https://github.com/softdev1029/softdev1029#readme",
+  "bugs": "https://github.com/softdev1029/softdev1029/issues",
+  "license": "UNLICENSED",
+  "author": "Tim Stasse <tim@softdev1029.com.au>",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/softdev1029/softdev1029.git",
+    "directory": "packages/plugins/yarn/environment"
+  },
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "yarn build:yarn-plugin-environment",
+    "build:yarn-plugin-environment": "builder build plugin",
+    "clean": "yarn clean:yarn-plugin-environment",
+    "clean:yarn-plugin-environment": "rm -rf bundles",
+    "import": "yarn import:yarn-plugin-environment",
+    "import:yarn-plugin-environment": "yarn plugin import ./bundles/@yarnpkg/plugin-environment.js",
+    "update": "yarn update:yarn-plugin-environment",
+    "update:yarn-plugin-environment": "yarn build && yarn import && yarn clean"
+  },
+  "dependencies": {
+    "@softdev1029/collection-utils": "workspace:^0.1.0",
+    "@softdev1029/object-utils": "workspace:^0.1.0",
+    "@yarnpkg/core": "softdev1029/berry#workspace=@yarnpkg/core",
+    "@yarnpkg/fslib": "softdev1029/berry#workspace=@yarnpkg/fslib",
+    "clipanion": "^2.6.2",
+    "lodash": "^4.17.20"
+  },
+  "devDependencies": {
+    "@softdev1029/schema-lib": "workspace:^0.1.0",
+    "@softdev1029/ts-config": "workspace:^0.1.0",
+    "@softdev1029/type-utils": "workspace:^0.1.0",
+    "@types/lodash": "^4.14.166",
+    "@types/node": "^14.14.16",
+    "@yarnpkg/builder": "softdev1029/berry#workspace=@yarnpkg/builder&branch=plugin-externals&commit=8467641ea27aed1c95e35c1b04a3a2badc2dd326",
+    "typescript": "^4.2.0-beta"
+  },
+  "yarn.build": {
+    "input": "src",
+    "output": "bundles"
+  }
+}

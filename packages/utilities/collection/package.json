@@ -1,0 +1,25 @@
+{
+  "name": "@softdev1029/collection-utils",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Collection transform utilities for the softdev1029 Platform.",
+  "homepage": "https://github.com/softdev1029/softdev1029#readme",
+  "bugs": "https://github.com/softdev1029/softdev1029/issues",
+  "license": "UNLICENSED",
+  "author": "Tim Stasse <tim@softdev1029.com.au>",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/softdev1029/softdev1029.git",
+    "directory": "packages/utilities/collection"
+  },
+  "main": "src/index.ts",
+  "dependencies": {
+    "lodash": "^4.17.20"
+  },
+  "devDependencies": {
+    "@softdev1029/ts-config": "workspace:^0.1.0",
+    "@softdev1029/type-utils": "workspace:^0.1.0",
+    "@types/lodash": "^4.14.166",
+    "typescript": "^4.2.0-beta"
+  }
+}

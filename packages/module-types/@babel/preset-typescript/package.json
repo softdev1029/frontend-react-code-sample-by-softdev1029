@@ -1,0 +1,25 @@
+{
+  "name": "@softdev1029/babel-preset-typescript-types",
+  "version": "0.1.0",
+  "private": true,
+  "description": "TypeScript definitions for @babel/preset-typescript",
+  "homepage": "https://github.com/softdev1029/softdev1029#readme",
+  "bugs": "https://github.com/softdev1029/softdev1029/issues",
+  "license": "UNLICENSED",
+  "author": "Tim Stasse <tim@softdev1029.com.au>",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/softdev1029/softdev1029.git",
+    "directory": "packages/module-types/@babel/preset-typescript"
+  },
+  "main": "index.d.ts",
+  "devDependencies": {
+    "@babel/core": "^7.12.13",
+    "@babel/preset-typescript": "^7.12.13",
+    "@softdev1029/ts-config": "workspace:^0.1.0",
+    "@softdev1029/type-utils": "workspace:^0.1.0",
+    "@types/babel__core": "^7.1.12",
+    "@types/node": "^14.14.16",
+    "typescript": "^4.2.0-beta"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "extends": "@softdev1029/ts-config/tsconfig.composite.json",
+  "compilerOptions": {
+    "outDir": "lib",
+    "rootDir": "src"
+  },
+  "include": ["src"]
+}

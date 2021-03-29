@@ -1,0 +1,10 @@
+{
+  "extends": "@softdev1029/ts-config/tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "@emotion/react",
+    "lib": ["DOM", "DOM.iterable", "ESNext"],
+    "module": "ESNext",
+    "target": "ES2017"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "name": "@softdev1029/admin-app",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Admin UI client application for the softdev1029 Platform.",
+  "homepage": "https://github.com/softdev1029/softdev1029#readme",
+  "bugs": "https://github.com/softdev1029/softdev1029/issues",
+  "license": "UNLICENSED",
+  "author": "Tim Stasse <tim@softdev1029.com.au>",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/softdev1029/softdev1029.git",
+    "directory": "packages/ui/applications/admin"
+  },
+  "scripts": {
+    "build": "yarn build:admin-app",
+    "build:admin-app": "webpack",
+    "clean": "yarn clean:admin-app",
+    "clean:admin-app": "rm -rf lib; rm -rf node_modules;",
+    "start": "yarn start:admin-app",
+    "start:admin-app": "webpack serve --open"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.1.5",
+    "@emotion/styled": "^11.1.5",
+    "@softdev1029/admin-app": "link:./src",
+    "@softdev1029/design-tokens": "workspace:^0.1.0",
+    "@softdev1029/react-components": "workspace:^0.1.0",
+    "lodash": "^4.17.20",
+    "react": "experimental",
+    "react-dom": "experimental"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
+    "@babel/register": "^7.12.13",
+    "@softdev1029/ts-config": "workspace:^0.1.0",
+    "@softdev1029/webpack-config": "workspace:^0.1.0",
+    "@types/babel__core": "^7.1.12",
+    "@types/lodash": "^4.14.166",
+    "@types/react": "^17.0.1",
+    "@types/react-dom": "^17.0.0",
+    "babel-loader": "^8.2.2",
+    "cache-loader": "^4.1.0",
+    "typescript": "^4.2.0-beta",
+    "webpack": "^5.21.1",
+    "webpack-cli": "4.5.0",
+    "webpack-dev-server": "4.0.0-beta.0"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "extends": "@softdev1029/ts-config/tsconfig.json",
+  "compilerOptions": {
+    "alwaysStrict": true,
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "incremental": true,
+    "isolatedModules": false,
+    "newLine": "lf",
+    "noEmit": false,
+    "noEmitOnError": true,
+    "sourceMap": true
+  }
+}

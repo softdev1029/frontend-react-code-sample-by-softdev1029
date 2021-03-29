@@ -1,0 +1,7 @@
+{
+  "extends": "@softdev1029/ts-config/tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "."
+  },
+  "include": ["*.ts"]
+}

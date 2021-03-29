@@ -1,0 +1,26 @@
+{
+  "name": "@softdev1029/design-tokens",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Design token library for the softdev1029 Platforms UI design system.",
+  "homepage": "https://github.com/softdev1029/softdev1029#readme",
+  "bugs": "https://github.com/softdev1029/softdev1029/issues",
+  "license": "UNLICENSED",
+  "author": "Tim Stasse <tim@softdev1029.com.au>",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/softdev1029/softdev1029.git",
+    "directory": "packages/ui/design/tokens"
+  },
+  "main": "src/index.ts",
+  "devDependencies": {
+    "@chakra-ui/react": "^1.3.3",
+    "@emotion/react": "^11.1.5",
+    "@emotion/styled": "^11.1.5",
+    "@softdev1029/ts-config": "workspace:^0.1.0",
+    "framer-motion": "^3.7.0",
+    "react": "experimental",
+    "react-dom": "experimental",
+    "typescript": "^4.1.3"
+  }
+}

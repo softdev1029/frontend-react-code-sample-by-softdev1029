@@ -1,0 +1,18 @@
+{
+  "name": "@softdev1029/scripts",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Project-level helper scripts for the softdev1029 Platform.",
+  "homepage": "https://github.com/softdev1029/softdev1029#readme",
+  "bugs": "https://github.com/softdev1029/softdev1029/issues",
+  "license": "UNLICENSED",
+  "author": "Tim Stasse <tim@softdev1029.com.au>",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/softdev1029/softdev1029.git",
+    "directory": "packages/scripts"
+  },
+  "workspaces": [
+    "*"
+  ]
+}
