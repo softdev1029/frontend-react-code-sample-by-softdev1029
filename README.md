@@ -1,23 +1,8 @@
 # @softdev1029/platform
 
-Monorepo for the softdev1029 Platform services and applications.
+Frontend React Code sample for softdev1029
 
 ## Getting Started
-
-### Installation
-
-After cloning the repository, run:
-
-`yarn install`
-
-This shouldn't take long (except when running postinstall scripts), since the project uses Yarn 2 and follows the zero-install strategy, meaning it shouldn't actually install anything. If it does install anything, then you might want to question why, since Yarn performs a check-sum against the dependencies currently installed, and it may indicate an attempt from a malicious actor to compromise your machine. Note that during the first intallation, yarn will run any build hooks configured via postinstall scripts, which is the only part of the installation that may take a moment.
-
-### Local Development
-
-After successfully installing & building the required configuration packages (done via postinstall), local webpack dev-servers for each ui application can be started by running the corresponding start command:
-
-- @softdev1029/admin-app
-  - `yarn start:admin-app`
 
 ## Project Folder Structure (Worktree Architecture)
 
